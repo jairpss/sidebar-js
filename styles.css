@@ -1,0 +1,95 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(228, 81%, 49%);
+  --title-color: hsl(228, 12%, 15%);
+  --text-color: hsl(228, 8%, 50%);
+  --body-color: hsl(228, 100%, 99%);
+  --container-color: #fff;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Manrope', sans-serif;
+  --normal-font-size: .938rem;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 968px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1 {
+  color: var(--title-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=============== NAV ===============*/
+.container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.section {
+  padding: 2rem 0;
+}
+
+
+@media screen and (max-width: 767px) {
+    .nav__logo,
+    .nav__toggle,
+    .nav__name{
+        display: none;
+    }
+
+    .nav__list{
+        position: fixed;
+        bottom: 2rem;
+        background-color: var(--container-color);
+        box-shadow: 0 8px 24px hsla(228, 81%, 24%, .15);
+    }
+}
+/* Active link */
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* Show menu */
+
+
+/* Rotate toggle icon */
+
+
+/* For 2K & 4K resolutions */
